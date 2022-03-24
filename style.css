@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+body {
+    font-size: 100%; 
+    background-color:#fff;   
+    color: #6E4139;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --cor-botao: #ACEAC4;
+    --cor-botao-foco: #8EC4A3; 
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 25px;
+    gap: 200px;
+}
+
+.logo {
+    height: 60px; /*Quando se muda a altura ele modifica alturaxlargura proporcionamente */
+}
+
+.menu { 
+    color: #6E4139;
+    display:flex;
+    gap: 30px;
+}
+
+.item-menu {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.area-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #ACEAC4;
+    padding: 40px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.titulo {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6E4139;
+    font: 500;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.subtitulo {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6E4139;
+    font: 500;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.botao {
+    height: 90px;
+    width: 250px;
+    background-color: var(--cor-botao);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 25px;  
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.imagem {
+    height: 400px;
+}
+
+.botao:hover {/*peseudo classe do botao, faz com que ele mude de estado*/
+    background-color: var(--cor-botao-foco);
+}
+
+.rodape {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap: 40px;
+    padding: 20px;
+    border-top: 1px solid #ACEAC4;
+    color: #6E4139;
+}
